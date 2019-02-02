@@ -1,5 +1,3 @@
-# CG scale Wiki
-
 Schwerpunktwaage auf Arduinobasis zum auswiegen von Flugmodellen. Es werden relativ wenige Bauteile benötigt, und sollte auch von Elektronikanfänger problemlos nachgebaut werden können.
 Die wichtigsten Funktionen:
 
@@ -13,4 +11,5 @@ Die wichtigsten Funktionen:
 - Parameter werden dauerhaft im EEprom gespeichert, und müssen nach einem Softwareupdate nicht neu parametriert werden
 - nur wenige Bauteile erforderlich, dadurch schnell und einfach aufgebaut
 
-
+![init](https://github.com/nightflyer88/CG_scale/blob/master/Doc/img/cgScale_init.jpeg)
+![run](https://github.com/nightflyer88/CG_scale/blob/master/Doc/img/cgScale.jpeg)
