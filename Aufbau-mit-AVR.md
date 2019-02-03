@@ -1,3 +1,5 @@
+### Elektrischer und mechanischer Aufbau
+
 Je nach gewünschtem Messbereich können die Wiegezellen nach belieben dimensioniert werden, solche gibt es von 1-200Kg. Die Zellen dürfen unterschiedlich gross sein. Die Messwandler der Wiegezellen müssen einen HX711 Chip enthalten. Als CPU wird grundsätzlich ein Arduino Micro mit Atmega32u4 empfohlen, andere Arduinos z.B. mit Atmega328 Prozessor sollten jedoch auch funktionieren.
 
 #### Materialliste:
@@ -18,24 +20,44 @@ Werden nur zwei Wiegezellen benötigt, so wird Zelle nr. 3 weggelassen. Wird die
 
 Die Wiegezellen 1 + 3 dürfen auch vor dem Anschlag sein, der Wert X1 wird dann negativ eingegeben.
 
-### Firmware laden
+### Arduino IDE installieren
 
-Um die [Firmware](https://github.com/nightflyer88/CG_scale/archive/master.zip) auf das Arduino Board zu laden, wird die [Arduino IDE](https://www.arduino.cc/en/main/software) benötig. Nachdem die Arduino IDE auf dem Computer installiert wurde, müssen noch zwei Bibliotheken installiert werden. Unter Sketch > Bibliotheken einbinden > Bibliotheken verwalten... gelangt man in den Bibliotheksverwalter. Nun nach "HX711" suchen und die lib von Olav Kallhovd installieren:
+Um die [Firmware](https://github.com/nightflyer88/CG_scale/releases) auf das Arduino Board zu laden, wird die [Arduino IDE](https://www.arduino.cc/en/main/software) benötig. Nachdem die Arduino IDE auf dem Computer installiert wurde, müssen noch zwei Bibliotheken installiert werden. Dazu öffnet man den Bibliotheksverwalter.
+
+**Sketch > Bibliotheken einbinden > Bibliotheken verwalten...**
+
+![lib_manager](https://github.com/nightflyer88/CG_scale/blob/master/Doc/img/lib_manager.png)
+
+Nun nach **HX711** suchen und die lib von Olav Kallhovd installieren:
 
 ![hx711](https://github.com/nightflyer88/CG_scale/blob/master/Doc/img/hx711_lib.png)
 
-Danach nach "u8g2" suchen, und die lib von Oliver installieren:
+Danach nach **u8g2** suchen, und die lib von Oliver installieren:
 ![u8g2](https://github.com/nightflyer88/CG_scale/blob/master/Doc/img/u8g2_lib.png)
 
-Nun das Arduino Board per USB am Computer anschliessen, und unter Werkzeuge das entsprechende Board sowie Port auswählen. Wenn die Datei "CG_scale.ino" in der Arduino IDE bereits geöffnet wurde, kann nun oben links (Pfeil) die Firmware hochgeladen werden. Wurde der Uploadvorgang ohne Fehlermeldung abgeschlossen, hat mans schon geschafft.
+### Firmware laden
+
+Die neuste [Firmware](https://github.com/nightflyer88/CG_scale/releases) herunterladen, zip-Ordner entpacken und den Ordner auf **CG_scale** umbenennen, sonst kommt anschliessend eine Fehlermeldung beim öffnen der Projektdatei. Nun die Arduino IDE starten und die Datei **CG_scale.ino** öffnen. Danach das Arduino Board per USB am Computer anschliessen, und unter Werkzeuge das entsprechende Board sowie Port auswählen. 
+
+![arduino_board](https://github.com/nightflyer88/CG_scale/blob/master/Doc/img/arduino_board.png)
+
+Jetzt kann oben links mit dem Pfeil die Firmware hochgeladen werden. Wurde der Uploadvorgang ohne Fehlermeldung abgeschlossen, hat man alles richtig gemacht, und die CG scale funktioniert.
+
+![arduino_upload](https://github.com/nightflyer88/CG_scale/blob/master/Doc/img/arduino_upload.png)
 
 ### Parameter Einstellungen
 
-Die Parameter werden per serieller Schnittstellen parametriert. Das Arduino Board per USB am Computer anschliessen, und unter Werkzeuge das entsprechende Board sowie Port auswählen. Danach den Seriellen Monitor öffnen, unter Werkzeuge > Serieller Monitor. Es erscheint ein simples Text Menü. Man gibt die Menünummer ein (mit Enter bestätigen), und es erscheint der entsprechende Wert den man ändern möchte.
+Die Parameter werden per serieller Schnittstellen parametriert. Das Arduino Board per USB am Computer anschliessen, und unter Werkzeuge das entsprechende Board sowie Port auswählen. Danach den Seriellen Monitor öffnen.
+
+**Werkzeuge > Serieller Monitor**
+
+![open_serial_monitor](https://github.com/nightflyer88/CG_scale/blob/master/Doc/img/open_serial_monitor.png)
+
+Es erscheint ein simples Text Menü. Man gibt die Menünummer ein (mit Enter bestätigen), und es erscheint der entsprechende Wert den man ändern möchte.
 
 ![menu](https://github.com/nightflyer88/CG_scale/blob/master/Doc/img/serial_menu.png)
 
-Zuerst müssen die mechanischen Dimensionen definiert werden, also Menü 1-4. Die Batteriespannung wird in Menü 11 aktiviert. Alle Parameter werden im internen EEprom gespeichert und gehen auch nach einem Softwareupdate nicht verloren.
+Zuerst müssen die mechanischen Dimensionen definiert werden, also Menü 1-4. Die Batteriespannung wird mit den Menüs 11-13 eingestellt. Alle Parameter werden im internen EEprom gespeichert und gehen auch nach einem Softwareupdate nicht verloren.
 
 
 ### Kalibrierung
@@ -44,7 +66,9 @@ Zur Kalibrierung gibt es zwei Möglichkeiten:
 
 #### 1. Manuell
 
-Man kalibriert anhand eines Referenzgewichts jede einzelne Wiegezelle. Das Gewicht auf eine Wiegezelle legen und den entsprechenden Kalibrierfaktor anpassen (Menü 8-10) bis der angezeigte Wert mit dem Referenzgewicht übereinstimmt. Die Werte der einzelnen Wiegezellen werden unter Menü 12 angezeigt. 
+Man kalibriert anhand eines Referenzgewichts jede einzelne Wiegezelle. Das Gewicht auf eine Wiegezelle legen und den entsprechenden Kalibrierfaktor anpassen (Menü 8-10) bis der angezeigte Wert mit dem Referenzgewicht übereinstimmt. Die Werte der einzelnen Wiegezellen werden unter Menü 12 angezeigt. Alternativ kann der Kalibrierfaktor mit folgender Formel berechnet werden:
+
+_Kalibrierfaktor = KalFaktorAlt / (RefGewicht / IstGewicht)_
 
 #### 2. Automatisch
 
