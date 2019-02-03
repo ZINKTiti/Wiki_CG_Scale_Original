@@ -13,3 +13,6 @@ Die wichtigsten Funktionen:
 
 ![init](https://github.com/nightflyer88/CG_scale/blob/master/Doc/img/cgScale_init.jpeg)
 ![run](https://github.com/nightflyer88/CG_scale/blob/master/Doc/img/cgScale.jpeg)
+![cgscale_home](https://github.com/nightflyer88/CG_scale/blob/master/Doc/img/cgscale_home.png)
+![cgscale_models](https://github.com/nightflyer88/CG_scale/blob/master/Doc/img/cgscale_models.png)
+![cgscale_settings](https://github.com/nightflyer88/CG_scale/blob/master/Doc/img/cgscale_settings.png)
