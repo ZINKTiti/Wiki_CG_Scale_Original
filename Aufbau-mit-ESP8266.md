@@ -113,6 +113,6 @@ Wird ein Update der Firmware gemacht, muss vor dem Update unbedingt ein Backup d
 
 Um die Firmware zu updaten, einfach in der Arduino IDE den Sketch und SPIFFS hochladen, so wie unter Punkt **Firmware laden**. Nach erfolgtem update, die _models.json_ im Modellmenü wiederherstellen. 
 
-Ab Version V1.2 ist auch ein wireless Update per Wlan möglich. In der Arduino IDE unter **Port** wird dann ein Netzwerkport angezeigt, diesen wählen und die Firmware wie gewohnt hochladen.
+Ab Version V1.2 ist auch ein wireless Update per Wlan möglich. In der Arduino IDE unter **Port** wird dann ein Netzwerkport angezeigt, diesen wählen und die Firmware wie gewohnt hochladen. Wird vor dem Update nach einem Passwort gefragt, dann das Passwort des Wifi Access point eingeben. Treten Probleme mit dem wireless Update auf, dann zuerst einen Hardware Reset durchführen, gibt es weitere Probleme, dann das Passwort des Wifi Access point löschen.
 
-![ota_port](https://raw.githubusercontent.com/nightflyer88/CG_scale/master/Doc/esp8266_OTA_port.png)
+![ota_port](https://raw.githubusercontent.com/nightflyer88/CG_scale/master/Doc/img/esp8266_OTA_port.png)
