@@ -73,3 +73,7 @@ _Kalibrierfaktor = KalFaktorAlt / (RefGewicht / IstGewicht)_
 #### 2. Automatisch
 
 Anhand eines Referenzobjekts. Zum Beispiel ein Modell, von dem das genaue Gewicht und der genaue Schwerpunkt bekannt ist. Alternativ kann auch ein Brett mit einem Gewicht verwendet werden. Das Brett sollte symmetrisch sein und das Gewicht mittig auf dem Brett positioniert sein. Ist das Gewicht und der Schwerpunkt von unserem Referenzobjekt bekannt, müssen diese Parameter in Menü 5 und 6 eingegeben werden. Nun das Referenzobjekt auf die Waage legen, und unter Menü 7 den Kalibriervorgang starten. 
+
+### Firmware Update
+
+Vor dem Update müssen die Parameter nicht gesichert werden, diese sind im internen Eeprom gespeichert und bleiben erhalten. Um die Firmware zu updaten, einfach in der Arduino IDE den Sketch hochladen, so wie unter Punkt **Firmware laden**.
