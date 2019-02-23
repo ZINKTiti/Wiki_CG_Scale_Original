@@ -12,7 +12,7 @@ Je nach gewünschtem Messbereich können die Wiegezellen nach belieben dimension
 
 
 #### Elektroschema:
-![schema](https://raw.githubusercontent.com/nightflyer88/CG_scale/master/Doc/CG_scale_schema.png)
+![schema](https://raw.githubusercontent.com/nightflyer88/CG_scale/master/Doc/CG_scale_schema_ESP8266.png)
 
 Werden nur zwei Wiegezellen benötigt, so wird Zelle nr. 3 weggelassen. Wird die Spannungsmessung nicht benötig, können die beiden Wiederstände R1 und R2 weggelassen werden. Werden andere Wiederstände verwendet, müssen die Werte in den Einstellungen angepasst werden.
 
@@ -106,3 +106,13 @@ _Kalibrierfaktor = KalFaktorAlt / (RefGewicht / IstGewicht)_
 #### 2. Automatisch
 
 Anhand eines Referenzobjekts. Zum Beispiel ein Modell, von dem das genaue Gewicht und der genaue Schwerpunkt bekannt ist. Alternativ kann auch ein Brett mit einem Gewicht verwendet werden. Das Brett sollte symmetrisch sein und das Gewicht mittig auf dem Brett positioniert sein. Ist das Gewicht und der Schwerpunkt von unserem Referenzobjekt bekannt, müssen diese Parameter in den Einstellungen eingegeben werden. Nun das Referenzobjekt auf die Waage legen, und in den Einstellungen den Kalibriervorgang starten. 
+
+### Firmware Update
+
+Wird ein Update der Firmware gemacht, muss vor dem Update unbedingt ein Backup der Modelldatenbank erstellt werden. Dazu kann einfach auf der Webpage der CG scale im Modellmenü **Backup** gewählt werden, und es wird automatisch die Modelldatei _(models.json)_ heruntergeladen. Die Parameter bleiben erhalten und müssen nicht gesichert werden. 
+
+Um die Firmware zu updaten, einfach in der Arduino IDE den Sketch und SPIFFS hochladen, so wie unter Punkt **Firmware laden**. Nach erfolgtem update, die _models.json_ im Modellmenü wiederherstellen. 
+
+Ab Version V1.2 ist auch ein wireless Update per Wlan möglich. In der Arduino IDE unter **Port** wird dann ein Netzwerkport angezeigt, diesen wählen und die Firmware wie gewohnt hochladen.
+
+![ota_port](https://raw.githubusercontent.com/nightflyer88/CG_scale/master/Doc/esp8266_OTA_port.png)
