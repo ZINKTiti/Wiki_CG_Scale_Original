@@ -58,7 +58,7 @@ Zuletzt nach **json** suchen, und die lib von Benolt Blanchon installieren, es d
 
 ![json_lib](https://github.com/nightflyer88/CG_scale/blob/master/Doc/img/json_lib.png)
 
-Damit die Webpage auf das ESP8266 geladen werden kann, muss noch der [Filesystem uploader](https://github.com/esp8266/arduino-esp8266fs-plugin/releases/tag/0.3.0) installiert werden. Nachdem die zip-Datei heruntergeladen und entpackt wurde, muss der Arduino Sketchbook Ordner auf dem Computer geöffnet werden. Dieser befindet sich normalerweise unter **Dokumente>Arduino** darin sollte sich bereits ein Ordner **libraries** und **tools** befinden. Ist der **tools** Ordner nicht vorhanden, so muss dieser erstellt werden. Danach den heruntergeladenen Ordner **ESP8266FS** in den **tools** kopieren.
+Damit die Webpage auf das ESP8266 geladen werden kann, muss noch der [Filesystem uploader](https://github.com/esp8266/arduino-esp8266fs-plugin/releases) installiert werden. Nachdem die letzte Version als zip-Datei heruntergeladen und entpackt wurde, muss der Arduino Sketchbook Ordner auf dem Computer geöffnet werden. Dieser befindet sich normalerweise unter **Dokumente>Arduino** darin sollte sich bereits ein Ordner **libraries** und **tools** befinden. Ist der **tools** Ordner nicht vorhanden, so muss dieser erstellt werden. Danach den heruntergeladenen Ordner **ESP8266FS** in den **tools** kopieren.
 
 Jetzt muss die Arduino IDE noch neu gestartet werden, und die IDE ist vorbereitet.
 
