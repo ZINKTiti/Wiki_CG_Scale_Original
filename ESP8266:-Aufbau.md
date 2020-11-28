@@ -1,3 +1,7 @@
+### Übersicht
+
+Wird für die CG scale ein ESP8266 Mikroprozessor verwendet, ist eine WiFi Funktion mit grafischer Webpage an Board. Bis zu drei Wäagezellen werden unterstützt, die Einstellungen werden komfortabel per Webpage vorgenommen. Die Anzeige erfolgt optional durch ein OLED Display. Per Webpage gibt es erweiterte Funktionen wie virtuelle Gewichte, speichern von Modellen, usw.
+
 ### Elektrischer und mechanischer Aufbau
 
 Je nach gewünschtem Messbereich können die Wiegezellen nach belieben dimensioniert werden, solche gibt es von 1-200Kg. Die Zellen dürfen unterschiedlich gross sein. Die Messwandler der Wiegezellen müssen einen HX711 Chip enthalten. Als CPU wird ein Node MCU V1.0 mit ESP8266 Chip empfohlen.
