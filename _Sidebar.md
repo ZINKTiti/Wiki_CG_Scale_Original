@@ -1,5 +1,7 @@
 ### AVR
-* [Aufbau](https://github.com/nightflyer88/CG_scale/wiki/Aufbau-mit-AVR)
+* [Aufbau](https://github.com/nightflyer88/CG_scale/wiki/AVR:-Aufbau)
+* [Firmware laden](https://github.com/nightflyer88/CG_scale/wiki/AVR:-Firmware-laden)
+* [Einstellung & Kalibrierung](https://github.com/nightflyer88/CG_scale/wiki/AVR:-Einstellung-&-Kalibrierung)
 
 ### ESP8266
 * [Aufbau](https://github.com/nightflyer88/CG_scale/wiki/Aufbau-mit-ESP8266)
