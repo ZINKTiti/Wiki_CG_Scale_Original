@@ -1,3 +1,7 @@
+### Übersicht
+
+Wird für die CG scale ein AVR Mikroprozessor verwendet, sind alle relevanten Funktionen mit an Board. Bis zu drei Wäagezellen werden unterstützt, Parametrierung ist per serieller Schnittstelle möglich. Die Anzeige erfolgt durch ein OLED Display. Eine WiFi Funktion mit Webpage ist nicht vorhanden.
+
 ### Elektrischer und mechanischer Aufbau
 
 Je nach gewünschtem Messbereich können die Wiegezellen nach belieben dimensioniert werden, solche gibt es von 1-200Kg. Die Zellen dürfen unterschiedlich gross sein. Die Messwandler der Wiegezellen müssen einen HX711 Chip enthalten. Als CPU wird grundsätzlich ein Arduino Micro mit Atmega32u4 empfohlen, andere Arduinos z.B. mit Atmega328 Prozessor sollten jedoch auch funktionieren.
