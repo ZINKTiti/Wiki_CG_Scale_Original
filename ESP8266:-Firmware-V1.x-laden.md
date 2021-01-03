@@ -1,6 +1,6 @@
 ### Arduino IDE installieren
 
-Um die [Firmware](https://github.com/nightflyer88/CG_scale/releases) auf das ESP8266 Board zu laden, wird die [Arduino IDE](https://www.arduino.cc/en/main/software) benötig. Nachdem die Arduino IDE auf dem Computer installiert wurde, muss zuerst in den Einstellungen eine neu Boardverwalter-URL hinzugefügt werden.
+Um die ältere [Firmware](https://github.com/nightflyer88/CG_scale/releases/tag/V1.2.1) V1.x auf das ESP8266 Board zu laden, wird die [Arduino IDE](https://www.arduino.cc/en/main/software) benötig. Nachdem die Arduino IDE auf dem Computer installiert wurde, muss zuerst in den Einstellungen eine neu Boardverwalter-URL hinzugefügt werden.
 
 ![arduino_settings](https://github.com/nightflyer88/CG_scale/blob/master/Doc/img/arduino_settings.png)
 
