@@ -23,9 +23,9 @@ Als Beispiel gibt es hier einigen Varianten zum 3D-Drucken:
 - [CG scale by Riboga](https://www.thingiverse.com/thing:3711368)
 - [Another CG Scale by stefan089](https://www.thingiverse.com/thing:4637811)
 
-Oder eine Version aus Sperrholz gefräst:
+Oder eine Version gefräst aus Sperrholz:
 
-![CG Scale](https://raw.githubusercontent.com/nightflyer88/CG_scale/master/Doc/CG_Scale_wood.jpeg)
+![CG Scale](https://raw.githubusercontent.com/nightflyer88/CG_scale/master/Doc/img/CG_Scale_wood.jpeg)
 
 **Mechanische Anordnung:**
 
