@@ -1,15 +1,18 @@
 # Firmware laden mit NodeMCU pyFlasher
 
-Zum einfachen laden der CG scale Firmware auf das ESP8266 Board kann der [Node MCU pyFlasher](https://github.com/marcelstoer/nodemcu-pyflasher/releases/latest) verwendet werden. Die Software gibts für Mac & Windows. Nun die fertig kompilierte [Firmware](https://github.com/nightflyer88/CG_scale/releases/latest) herunterladen (cgscale_ESP8266_SH1106_128x64.bin), den PyFlasher öffnen, Firmware hochladen, fertig !
+Ab Version V2.x, steht die Firmware auch als fertig kompilierte Datei zur Verfügung. Zum einfachen laden der CG scale Firmware auf das ESP8266 Board kann der [Node MCU pyFlasher](https://github.com/marcelstoer/nodemcu-pyflasher/releases/latest) verwendet werden. Die Software gibts für Mac & Windows. 
+
+Die fertig kompilierte [Firmware](https://github.com/nightflyer88/CG_scale/releases/latest) herunterladen (cgscale_ESP8266_SH1106_128x64.bin), den PyFlasher öffnen, ESP8266 per USB am Computer anschliessen und die entsprechende Schnittstelle wählen, die Einstellung **yes, wipes all data** wählen, Firmware hochladen, fertig !
+
 ![pyFlasher](https://github.com/nightflyer88/CG_scale/blob/master/Doc/img/nodeMCUpyFlasher.png)
 
-Nach dem die CG scale das erste mal gebootet hat, wird ein Hotspot **CG scale** generiert, mit diesem WiFi verbindet man sich nun mit dem Computer. Danach den Webbrowser öffnen, und die Adresse: **cgscale.local/update** eintippen. Es öffnet sich eine kleine Update Webpage, dort wählt man bei **Filesystem** die Datei **CG_scale_spiffs.bin** und drückt auf **Filesystem update**. Nach erfolgtem update bootet die CG scale neu, und ist nun betriebsbereit.
+Nach dem die CG scale das erste mal gebootet hat, wird ein Hotspot **CG scale** generiert, mit diesem WiFi verbindet man sich mit dem Computer. Danach den Webbrowser öffnen, und die Adresse **cgscale.local/update** eintippen. Es öffnet sich eine kleine Update Webpage, dort wählt man **Filesystem**, die Datei **CG_scale.spiffs.bin**, und der upload startet automatisch. Nach erfolgtem update bootet die CG scale neu, und ist nun betriebsbereit.
 
 ![webupdate](https://github.com/nightflyer88/CG_scale/blob/master/Doc/img/webupdate.png)
 
 # Firmware laden mit Arduino IDE
 
-Möchte man die Firmware auf seine eigene Bedürfnisse anpassen, braucht man die Arduino IDE.
+Fortgeschrittene Anwender können die Firmware auch auf ihre eigene Bedürfnisse anpassen und Erweiterungen/Änderungen vornehmen. Dazu braucht man die Arduino IDE.
 
 ### Arduino IDE installieren
 
