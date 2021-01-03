@@ -16,3 +16,5 @@ Die wichtigsten Funktionen:
 ![cgscale_home](https://github.com/nightflyer88/CG_scale/blob/master/Doc/img/cgscale_home.png)
 ![cgscale_models](https://github.com/nightflyer88/CG_scale/blob/master/Doc/img/cgscale_models.png)
 ![cgscale_settings](https://github.com/nightflyer88/CG_scale/blob/master/Doc/img/cgscale_settings.png)
+![cgscale_models](https://github.com/nightflyer88/CG_scale/blob/master/Doc/img/CG_Scale_wood.jpeg)
+![cgscale_models](https://github.com/nightflyer88/CG_scale/blob/master/Doc/img/CG_Scale_ASW20.jpeg)
