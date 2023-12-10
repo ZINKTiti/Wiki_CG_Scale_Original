@@ -16,7 +16,7 @@ Fortgeschrittene Anwender können die Firmware auch auf ihre eigene Bedürfnisse
 
 ### Arduino IDE installieren
 
-Um die [Firmware](https://github.com/nightflyer88/CG_scale/releases) auf das ESP8266 Board zu laden, wird die [Arduino IDE](https://www.arduino.cc/en/main/software) benötig. Nachdem die Arduino IDE auf dem Computer installiert wurde, muss zuerst in den Einstellungen eine neu Boardverwalter-URL hinzugefügt werden.
+Um die [Firmware](https://github.com/nightflyer88/CG_scale/releases) auf das ESP8266 Board zu laden, wird die [Arduino IDE](https://www.arduino.cc/en/main/software) benötig. Es wird momentan noch die IDE Version 1.x empfohlen, da die Upload-Tools für das SPIFFS oder LittleFS Dateisystem mit der Arduino IDE 2.x noch nicht kompatibel sind. Nachdem die Arduino IDE auf dem Computer installiert wurde, muss zuerst in den Einstellungen eine neu Boardverwalter-URL hinzugefügt werden.
 
 ![arduino_settings](https://github.com/nightflyer88/CG_scale/blob/master/Doc/img/arduino_settings.png)
 
@@ -51,7 +51,7 @@ Zuletzt nach **json** suchen, und die neuste lib (V6.x) von Benolt Blanchon inst
 
 ![json_lib](https://github.com/nightflyer88/CG_scale/blob/master/Doc/img/json_lib_V2.png)
 
-Damit die Webpage auf das ESP8266 geladen werden kann, muss noch der [Filesystem uploader](https://github.com/esp8266/arduino-esp8266fs-plugin/releases) installiert werden. Nachdem die letzte Version als zip-Datei heruntergeladen und entpackt wurde, muss der Arduino Sketchbook Ordner auf dem Computer geöffnet werden. Dieser befindet sich normalerweise unter **Dokumente>Arduino** darin sollte sich bereits ein Ordner **libraries** und **tools** befinden. Ist der **tools** Ordner nicht vorhanden, so muss dieser erstellt werden. Danach den heruntergeladenen Ordner **ESP8266FS** in den **tools** kopieren.
+Damit die Webpage auf das ESP8266 geladen werden kann, muss noch ein Upload-Tool in der Arduino IDE installiert werden. Bis zur CGscale Version 2.2.2 wurde das SPIFFS Dateisystem verwendet, dazu wird noch der SPIFFS [Filesystem uploader](https://github.com/esp8266/arduino-esp8266fs-plugin/releases) benötigt. Ab der CGscale Version 2.3 wird das neue LittleFS Dateisystem verwendet, dazu braucht es den [LittleFS Filesystem Uploader](https://github.com/earlephilhower/arduino-esp8266littlefs-plugin), beide Tools funktionieren momentan nur mit Arduino IDE 1.x. Nachdem die letzte Version als zip-Datei heruntergeladen und entpackt wurde, muss der Arduino Sketchbook Ordner auf dem Computer geöffnet werden. Dieser befindet sich normalerweise unter **Dokumente>Arduino** darin sollte sich bereits ein Ordner **libraries** und **tools** befinden. Ist der **tools** Ordner nicht vorhanden, so muss dieser erstellt werden. Danach den heruntergeladenen Ordner **ESP8266FS** (bzw. **ESP8266LittleFS**) in den **tools** kopieren.
 
 ![esp_tool](https://github.com/nightflyer88/CG_scale/blob/master/Doc/img/esp_tool.png)
 
